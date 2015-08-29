@@ -45,7 +45,7 @@
         <!--Settings-->
         <scene sceneID="B0h-nc-eiA">
             <objects>
-                <viewController id="K4W-p0-DIQ" sceneMemberID="viewController">
+                <viewController id="K4W-p0-DIQ" customClass="SettingsViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cW0-nf-jiW"/>
                         <viewControllerLayoutGuide type="bottom" id="16P-QR-tDF"/>
@@ -60,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXU-tM-RnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746" y="984"/>
+            <point key="canvasLocation" x="750" y="973"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -75,12 +75,12 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="K4W-p0-DIQ" kind="relationship" relationship="viewControllers" id="SS7-Ti-Zjp"/>
+                        <segue destination="K4W-p0-DIQ" kind="relationship" relationship="viewControllers" id="mcO-i3-zSp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="318"/>
+            <point key="canvasLocation" x="-168" y="420"/>
         </scene>
     </scenes>
     <resources>

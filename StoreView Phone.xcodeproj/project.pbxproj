@@ -14,6 +14,7 @@
 		842A8E6B1B910F980003B753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6A1B910F980003B753 /* Images.xcassets */; };
 		842A8E6E1B910F980003B753 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6C1B910F980003B753 /* LaunchScreen.xib */; };
 		842A8E7A1B910F980003B753 /* StoreView_PhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */; };
+		842A8E911B917A9E0003B753 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E901B917A9E0003B753 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		842A8E731B910F980003B753 /* StoreView PhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreView PhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A8E781B910F980003B753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView_PhoneTests.swift; sourceTree = "<group>"; };
+		842A8E901B917A9E0003B753 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				842A8E611B910F980003B753 /* AppDelegate.swift */,
 				842A8E631B910F980003B753 /* FirstViewController.swift */,
 				842A8E651B910F980003B753 /* SecondViewController.swift */,
+				842A8E901B917A9E0003B753 /* SettingsViewController.swift */,
 				842A8E671B910F980003B753 /* Main.storyboard */,
 				842A8E6A1B910F980003B753 /* Images.xcassets */,
 				842A8E6C1B910F980003B753 /* LaunchScreen.xib */,
@@ -223,6 +226,7 @@
 				842A8E661B910F980003B753 /* SecondViewController.swift in Sources */,
 				842A8E621B910F980003B753 /* AppDelegate.swift in Sources */,
 				842A8E641B910F980003B753 /* FirstViewController.swift in Sources */,
+				842A8E911B917A9E0003B753 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,7 @@
 				842A8E7F1B910F980003B753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842A8E801B910F980003B753 /* Build configuration list for PBXNativeTarget "StoreView PhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				842A8E821B910F980003B753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
