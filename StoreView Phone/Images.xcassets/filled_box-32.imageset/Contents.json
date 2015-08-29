@@ -2,7 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "first.pdf"
+      "scale" : "1x",
+      "filename" : "filled_box-32.png"
     }
   ],
   "info" : {
