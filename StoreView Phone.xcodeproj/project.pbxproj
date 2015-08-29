@@ -14,6 +14,7 @@
 		842A8E6B1B910F980003B753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6A1B910F980003B753 /* Images.xcassets */; };
 		842A8E6E1B910F980003B753 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6C1B910F980003B753 /* LaunchScreen.xib */; };
 		842A8E7A1B910F980003B753 /* StoreView_PhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */; };
+		848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024961B9260B5005A2CEB /* SettingsViewController.swift */; };
 		84B84B081B917F95006ADDD9 /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B84B071B917F95006ADDD9 /* DatesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		842A8E731B910F980003B753 /* StoreView PhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreView PhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A8E781B910F980003B753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView_PhoneTests.swift; sourceTree = "<group>"; };
+		848024961B9260B5005A2CEB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		84B84B071B917F95006ADDD9 /* DatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				842A8E631B910F980003B753 /* CheckoutViewController.swift */,
 				842A8E651B910F980003B753 /* InventoryViewController.swift */,
 				84B84B071B917F95006ADDD9 /* DatesViewController.swift */,
+				848024961B9260B5005A2CEB /* SettingsViewController.swift */,
 				842A8E671B910F980003B753 /* Main.storyboard */,
 				842A8E6A1B910F980003B753 /* Images.xcassets */,
 				842A8E6C1B910F980003B753 /* LaunchScreen.xib */,
@@ -226,6 +229,7 @@
 				842A8E661B910F980003B753 /* InventoryViewController.swift in Sources */,
 				842A8E621B910F980003B753 /* AppDelegate.swift in Sources */,
 				842A8E641B910F980003B753 /* CheckoutViewController.swift in Sources */,
+				848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */,
 				84B84B081B917F95006ADDD9 /* DatesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
