@@ -8,28 +8,41 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
-
+class SettingsViewController: UIViewController, UITableViewDataSource {
+    
+    //Main ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         //println("Loaded")
         // Do any additional setup after loading the view.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //End Main ViewController
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        //Start Table View Data
+            //Table definitions
+            let settingsTable = [
+                ("Server Settings"),
+                ("Test")
+            ]
+            //End Table definitions
+        func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+            return 1
+            //Number of Sections
+        }
+        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return settingsTable.count
+            //Number of Rows in each section
+        }
+        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            var cell = UITableViewCell()
+            let (name) = settingsTable[indexPath.row]
+            cell.textLabel?.text = name
+            return cell
+            //Cells in each section
+        }
+        //End Table View Data
 }

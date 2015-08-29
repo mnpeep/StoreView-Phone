@@ -7,7 +7,7 @@
         <!--Checkout-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="CheckoutViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-22"/>
+            <point key="canvasLocation" x="690" y="-934"/>
         </scene>
         <!--Inventory-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="InventoryViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -40,27 +40,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="-22"/>
+            <point key="canvasLocation" x="690" y="-274"/>
         </scene>
         <!--Settings-->
-        <scene sceneID="B0h-nc-eiA">
+        <scene sceneID="dIQ-5x-1ex">
             <objects>
-                <viewController id="K4W-p0-DIQ" customClass="SettingsViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="Settings" id="vP4-OS-X89" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings-32" id="LsU-p3-OiJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M2O-Yl-K3e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="myq-vw-HcE" kind="relationship" relationship="rootViewController" id="SBB-To-MhY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rvM-n6-D0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="1027"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="AYw-v4-LSC">
+            <objects>
+                <viewController title="Settings" id="myq-vw-HcE" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cW0-nf-jiW"/>
-                        <viewControllerLayoutGuide type="bottom" id="16P-QR-tDF"/>
+                        <viewControllerLayoutGuide type="top" id="Wv1-Gv-ZbM"/>
+                        <viewControllerLayoutGuide type="bottom" id="xp1-HH-gFp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MiZ-IC-pcB">
+                    <view key="view" contentMode="scaleToFill" id="1Zz-Zy-1JA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings-32" id="CFX-b0-Flv"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Settings" id="nG1-XE-ryB"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wXU-tM-RnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTt-aA-aYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="655"/>
+            <point key="canvasLocation" x="1363" y="1027"/>
         </scene>
         <!--Expiration Dates-->
         <scene sceneID="6tu-qM-NUC">
@@ -80,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7a-Dp-1sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="655"/>
+            <point key="canvasLocation" x="690" y="377"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -96,12 +112,12 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="fjG-pS-jPH" kind="relationship" relationship="viewControllers" id="lbO-vI-4TQ"/>
-                        <segue destination="K4W-p0-DIQ" kind="relationship" relationship="viewControllers" id="mcO-i3-zSp"/>
+                        <segue destination="vP4-OS-X89" kind="relationship" relationship="viewControllers" id="krT-Op-8pX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-38" y="292"/>
+            <point key="canvasLocation" x="-178" y="1033"/>
         </scene>
     </scenes>
     <resources>

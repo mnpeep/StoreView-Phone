@@ -12,7 +12,7 @@ class DatesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("Dates")
+        //println("Dates")
         // Do any additional setup after loading the view.
     }
 

@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  InventoryViewController.swift
 //  StoreView Phone
 //
 //  Created by Max Napadiy on 8/28/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class InventoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
