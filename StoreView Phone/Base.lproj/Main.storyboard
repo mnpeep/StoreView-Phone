@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-22"/>
         </scene>
         <!--Inventory-->
         <scene sceneID="wg7-f3-ORb">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="318"/>
+            <point key="canvasLocation" x="1380" y="-22"/>
         </scene>
         <!--Settings-->
         <scene sceneID="B0h-nc-eiA">
@@ -60,7 +60,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXU-tM-RnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="973"/>
+            <point key="canvasLocation" x="750" y="655"/>
+        </scene>
+        <!--Expiration Dates-->
+        <scene sceneID="6tu-qM-NUC">
+            <objects>
+                <viewController id="fjG-pS-jPH" customClass="DatesViewController" customModule="StoreView_Phone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ig1-5p-qBZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="U4w-9S-9Li"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZJA-BI-RZR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expiration Dates" image="overtime-32" id="VbH-2o-94G"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7a-Dp-1sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="655"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -75,17 +95,19 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="fjG-pS-jPH" kind="relationship" relationship="viewControllers" id="lbO-vI-4TQ"/>
                         <segue destination="K4W-p0-DIQ" kind="relationship" relationship="viewControllers" id="mcO-i3-zSp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168" y="420"/>
+            <point key="canvasLocation" x="-38" y="292"/>
         </scene>
     </scenes>
     <resources>
         <image name="cash_register-32" width="32" height="32"/>
         <image name="filled_box-32" width="32" height="32"/>
+        <image name="overtime-32" width="32" height="32"/>
         <image name="settings-32" width="32" height="32"/>
     </resources>
 </document>
