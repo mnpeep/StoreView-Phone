@@ -8,28 +8,33 @@
 
 import UIKit
 
-class DatesViewController: UIViewController {
-
+class DatesViewController: UIViewController, UITableViewDataSource {
+    //Main Functions
+    @IBOutlet weak var expTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //println("Dates")
-        // Do any additional setup after loading the view.
+        var nib = UINib(nibName: "ExpirationDateCell", bundle: nil)
+        expTableView.registerNib(nib, forCellReuseIdentifier: "expcell")
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //End Main Functions
+    //Start Table View Functions
+   
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = self.expTableView.dequeueReusableCellWithIdentifier("expcell") as! ExpirationDateCell
+        cell.productName?.text = "Soup"
+        cell.productQuantity?.text = "1"
+        cell.productExpirationDate?.text = "03/03/2013"
+        return cell
+    }
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){
+        println("\(indexPath.row)  Selected")
+    }
+    //End Table View Functions
 }

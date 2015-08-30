@@ -20,16 +20,51 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     }
     //End of ViewController Functions
     //Start of Table View Functions
+    //Table defs
+    let settingsTitle = [
+        ("Main Settings"),
+        ("View Settings")
+    ]
+    let mainSettingsTable = [
+        ("Server Settings"),
+        ("Login Settings"),
+        ("Sync Settings")
+    ]
+    let viewSettingsTable = [
+        ("Expiration Dates")
+    ]
+    //End table defs
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-        cell.textLabel?.text = "Hello"
+        var cellTitle = ""
+        if(indexPath.section == 0 && indexPath.row <= (mainSettingsTable.count - 1)){
+            cellTitle = mainSettingsTable[indexPath.row]
+        }else if (indexPath.section == 1 && indexPath.row <= (viewSettingsTable.count - 1)){
+            cellTitle = viewSettingsTable[indexPath.row]
+        }else{
+            cellTitle = "Error"
+        }
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        cell.textLabel?.text = cellTitle
         return cell
     }
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if((settingsTitle.count - 1) >= section){
+            return settingsTitle[section]
+        }else{
+            return nil
+        }
+    }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return settingsTitle.count
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if(section == 0){
+            return mainSettingsTable.count
+        }else if(section == 1){
+            return viewSettingsTable.count
+        }else{
+            return 0
+        }
     }
     //End of Table View Functions
 }
