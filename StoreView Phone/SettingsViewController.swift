@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     //End of ViewController Functions
-    //Start of Table View Functions
+    
     //Table defs
     let settingsTitle = [
         ("Main Settings"),
@@ -34,6 +34,8 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         ("Expiration Dates")
     ]
     //End table defs
+    
+    //Start of Table View Functions
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cellTitle = ""
         if(indexPath.section == 0 && indexPath.row <= (mainSettingsTable.count - 1)){

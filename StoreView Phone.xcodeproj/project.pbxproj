@@ -15,9 +15,9 @@
 		842A8E6E1B910F980003B753 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6C1B910F980003B753 /* LaunchScreen.xib */; };
 		842A8E7A1B910F980003B753 /* StoreView_PhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */; };
 		848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024961B9260B5005A2CEB /* SettingsViewController.swift */; };
-		848024991B93A155005A2CEB /* ExpirationDateTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848024981B93A155005A2CEB /* ExpirationDateTableCell.xib */; };
-		848024A11B93A5AA005A2CEB /* ExpirationDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024A01B93A5AA005A2CEB /* ExpirationDateCell.swift */; };
-		84B84B081B917F95006ADDD9 /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B84B071B917F95006ADDD9 /* DatesViewController.swift */; };
+		848024A71B941A43005A2CEB /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024A61B941A43005A2CEB /* DatesViewController.swift */; };
+		848024AC1B942912005A2CEB /* datesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024AA1B942912005A2CEB /* datesTableViewCell.swift */; };
+		848024AD1B942912005A2CEB /* datesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848024AB1B942912005A2CEB /* datesTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,9 @@
 		842A8E781B910F980003B753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView_PhoneTests.swift; sourceTree = "<group>"; };
 		848024961B9260B5005A2CEB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		848024981B93A155005A2CEB /* ExpirationDateTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpirationDateTableCell.xib; sourceTree = "<group>"; };
-		848024A01B93A5AA005A2CEB /* ExpirationDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpirationDateCell.swift; sourceTree = "<group>"; };
-		84B84B071B917F95006ADDD9 /* DatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
+		848024A61B941A43005A2CEB /* DatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
+		848024AA1B942912005A2CEB /* datesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = datesTableViewCell.swift; sourceTree = "<group>"; };
+		848024AB1B942912005A2CEB /* datesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = datesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +92,10 @@
 				842A8E671B910F980003B753 /* Main.storyboard */,
 				842A8E631B910F980003B753 /* CheckoutViewController.swift */,
 				842A8E651B910F980003B753 /* InventoryViewController.swift */,
-				84B84B071B917F95006ADDD9 /* DatesViewController.swift */,
+				848024A61B941A43005A2CEB /* DatesViewController.swift */,
 				848024961B9260B5005A2CEB /* SettingsViewController.swift */,
-				848024981B93A155005A2CEB /* ExpirationDateTableCell.xib */,
-				848024A01B93A5AA005A2CEB /* ExpirationDateCell.swift */,
+				848024AA1B942912005A2CEB /* datesTableViewCell.swift */,
+				848024AB1B942912005A2CEB /* datesTableViewCell.xib */,
 				842A8E6A1B910F980003B753 /* Images.xcassets */,
 				842A8E5F1B910F980003B753 /* Supporting Files */,
 			);
@@ -213,9 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				842A8E691B910F980003B753 /* Main.storyboard in Resources */,
-				848024991B93A155005A2CEB /* ExpirationDateTableCell.xib in Resources */,
 				842A8E6E1B910F980003B753 /* LaunchScreen.xib in Resources */,
 				842A8E6B1B910F980003B753 /* Images.xcassets in Resources */,
+				848024AD1B942912005A2CEB /* datesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +235,10 @@
 			files = (
 				842A8E661B910F980003B753 /* InventoryViewController.swift in Sources */,
 				842A8E621B910F980003B753 /* AppDelegate.swift in Sources */,
-				848024A11B93A5AA005A2CEB /* ExpirationDateCell.swift in Sources */,
 				842A8E641B910F980003B753 /* CheckoutViewController.swift in Sources */,
+				848024AC1B942912005A2CEB /* datesTableViewCell.swift in Sources */,
+				848024A71B941A43005A2CEB /* DatesViewController.swift in Sources */,
 				848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */,
-				84B84B081B917F95006ADDD9 /* DatesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

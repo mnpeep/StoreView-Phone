@@ -1,5 +1,5 @@
 //
-//  ExpirationDateCell.swift
+//  datesTableViewCell.swift
 //  StoreView Phone
 //
 //  Created by Max Napadiy on 8/30/15.
@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ExpirationDateCell: UITableViewCell {
+class datesTableViewCell: UITableViewCell {
 
+    @IBOutlet var productExpirationDate: UILabel!
+    @IBOutlet var productQuantity: UILabel!
+    @IBOutlet var productName: UILabel!
+    @IBOutlet var productImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,9 +24,5 @@ class ExpirationDateCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-    @IBOutlet weak var productImage: UIImageView!
-    @IBOutlet weak var productName: UILabel!
-    @IBOutlet weak var productQuantity: UILabel!
-    @IBOutlet weak var productExpirationDate: UILabel!
+    
 }
