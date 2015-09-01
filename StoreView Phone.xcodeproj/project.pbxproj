@@ -14,6 +14,9 @@
 		842A8E6B1B910F980003B753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6A1B910F980003B753 /* Images.xcassets */; };
 		842A8E6E1B910F980003B753 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842A8E6C1B910F980003B753 /* LaunchScreen.xib */; };
 		842A8E7A1B910F980003B753 /* StoreView_PhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */; };
+		842B9BB01B957C8200FC55B3 /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B9BAF1B957C8200FC55B3 /* ServerSettingsViewController.swift */; };
+		842B9BB51B96108000FC55B3 /* TextFieldTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B9BB41B96108000FC55B3 /* TextFieldTableCell.swift */; };
+		842B9BB71B96142B00FC55B3 /* ButtonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B9BB61B96142B00FC55B3 /* ButtonTableCell.swift */; };
 		848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024961B9260B5005A2CEB /* SettingsViewController.swift */; };
 		848024A71B941A43005A2CEB /* DatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024A61B941A43005A2CEB /* DatesViewController.swift */; };
 		848024AC1B942912005A2CEB /* datesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848024AA1B942912005A2CEB /* datesTableViewCell.swift */; };
@@ -42,6 +45,9 @@
 		842A8E731B910F980003B753 /* StoreView PhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreView PhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842A8E781B910F980003B753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842A8E791B910F980003B753 /* StoreView_PhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView_PhoneTests.swift; sourceTree = "<group>"; };
+		842B9BAF1B957C8200FC55B3 /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
+		842B9BB41B96108000FC55B3 /* TextFieldTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableCell.swift; sourceTree = "<group>"; };
+		842B9BB61B96142B00FC55B3 /* ButtonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableCell.swift; sourceTree = "<group>"; };
 		848024961B9260B5005A2CEB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		848024A61B941A43005A2CEB /* DatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesViewController.swift; sourceTree = "<group>"; };
 		848024AA1B942912005A2CEB /* datesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = datesTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,16 +93,13 @@
 		842A8E5E1B910F980003B753 /* StoreView Phone */ = {
 			isa = PBXGroup;
 			children = (
+				842B9B4A1B95381C00FC55B3 /* DatabaseController */,
 				842A8E6C1B910F980003B753 /* LaunchScreen.xib */,
 				842A8E611B910F980003B753 /* AppDelegate.swift */,
 				842A8E671B910F980003B753 /* Main.storyboard */,
-				842A8E631B910F980003B753 /* CheckoutViewController.swift */,
-				842A8E651B910F980003B753 /* InventoryViewController.swift */,
-				848024A61B941A43005A2CEB /* DatesViewController.swift */,
-				848024961B9260B5005A2CEB /* SettingsViewController.swift */,
-				848024AA1B942912005A2CEB /* datesTableViewCell.swift */,
-				848024AB1B942912005A2CEB /* datesTableViewCell.xib */,
-				842A8E6A1B910F980003B753 /* Images.xcassets */,
+				842B9BB21B957CE900FC55B3 /* Tab Bar Controllers */,
+				842B9BAE1B957C4000FC55B3 /* SettingsClasses */,
+				842B9BB11B957C9200FC55B3 /* Media and Custom Classes */,
 				842A8E5F1B910F980003B753 /* Supporting Files */,
 			);
 			path = "StoreView Phone";
@@ -125,6 +128,52 @@
 				842A8E781B910F980003B753 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		842B9B4A1B95381C00FC55B3 /* DatabaseController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DatabaseController;
+			sourceTree = "<group>";
+		};
+		842B9BAE1B957C4000FC55B3 /* SettingsClasses */ = {
+			isa = PBXGroup;
+			children = (
+				842B9BB31B960F7500FC55B3 /* ServerSettings */,
+			);
+			name = SettingsClasses;
+			sourceTree = "<group>";
+		};
+		842B9BB11B957C9200FC55B3 /* Media and Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				842A8E6A1B910F980003B753 /* Images.xcassets */,
+				848024AA1B942912005A2CEB /* datesTableViewCell.swift */,
+				848024AB1B942912005A2CEB /* datesTableViewCell.xib */,
+			);
+			name = "Media and Custom Classes";
+			sourceTree = "<group>";
+		};
+		842B9BB21B957CE900FC55B3 /* Tab Bar Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				842A8E631B910F980003B753 /* CheckoutViewController.swift */,
+				842A8E651B910F980003B753 /* InventoryViewController.swift */,
+				848024A61B941A43005A2CEB /* DatesViewController.swift */,
+				848024961B9260B5005A2CEB /* SettingsViewController.swift */,
+			);
+			name = "Tab Bar Controllers";
+			sourceTree = "<group>";
+		};
+		842B9BB31B960F7500FC55B3 /* ServerSettings */ = {
+			isa = PBXGroup;
+			children = (
+				842B9BAF1B957C8200FC55B3 /* ServerSettingsViewController.swift */,
+				842B9BB41B96108000FC55B3 /* TextFieldTableCell.swift */,
+				842B9BB61B96142B00FC55B3 /* ButtonTableCell.swift */,
+			);
+			name = ServerSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +284,12 @@
 			files = (
 				842A8E661B910F980003B753 /* InventoryViewController.swift in Sources */,
 				842A8E621B910F980003B753 /* AppDelegate.swift in Sources */,
+				842B9BB71B96142B00FC55B3 /* ButtonTableCell.swift in Sources */,
 				842A8E641B910F980003B753 /* CheckoutViewController.swift in Sources */,
 				848024AC1B942912005A2CEB /* datesTableViewCell.swift in Sources */,
+				842B9BB51B96108000FC55B3 /* TextFieldTableCell.swift in Sources */,
 				848024A71B941A43005A2CEB /* DatesViewController.swift in Sources */,
+				842B9BB01B957C8200FC55B3 /* ServerSettingsViewController.swift in Sources */,
 				848024971B9260B5005A2CEB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

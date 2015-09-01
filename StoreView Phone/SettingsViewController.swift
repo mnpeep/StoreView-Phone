@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         ("Sync Settings")
     ]
     let viewSettingsTable = [
-        ("Expiration Dates")
+        ("Expiration Date Lengths")
     ]
     //End table defs
     
@@ -47,6 +47,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         }
         var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = cellTitle
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
     }
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

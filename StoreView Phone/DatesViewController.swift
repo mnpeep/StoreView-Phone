@@ -14,19 +14,24 @@ class DatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         var nib = UINib(nibName: "datesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "expcell")
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    @IBOutlet var tableView: UITableView!
     //Main Functions End
     //Table Functions Start
+    @IBOutlet var tableView: UITableView!
+    var refreshControl:UIRefreshControl!
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell 	{
         
         var cell: datesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("expcell") as! datesTableViewCell
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell.productQuantity.text = "100"
         cell.productName.text = "Test Product"
         cell.productExpirationDate.text = "01/01/2011"
@@ -38,6 +43,9 @@ class DatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
+    }
+    func refresh(sender:AnyObject){
+        self.refreshControl.endRefreshing()
     }
     //Table Functions End
 }
