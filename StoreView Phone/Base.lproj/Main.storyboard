@@ -150,9 +150,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="buttonCell" destination="pna-2V-pId" id="7eU-z2-nA5"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
