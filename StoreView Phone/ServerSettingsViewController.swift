@@ -10,23 +10,12 @@ import UIKit
 import CoreData
 
 class ServerSettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
     //Main ViewController Functions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     //End of ViewController Functions
-    
-    //Table defs
-    let mainSettingsTable = [
-        ("Server Settings"),
-        ("Login Settings"),
-        ("Sync Settings")
-    ]
-    let viewSettingsTable = [
-        ("Expiration Date Lengths")
-    ]
-    //End table defs
-    
     //Start of Table View Functions
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cellText = ""
@@ -43,10 +32,10 @@ class ServerSettingsViewController: UIViewController, UITableViewDataSource, UIT
             let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! TextFieldTableCell
             cell.editPlaceholder(placeholder: cellText)
             return cell
-        }else{
-            let cell = tableView.dequeueReusableCellWithIdentifier("buttonCell") as! ButtonTableCell
-            return cell
+        }else if(indexPath.section == 1){
+           return tableView.dequeueReusableCellWithIdentifier("buttonCell2") as! SaveButtonTableCell
         }
+        return UITableViewCell()
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -59,4 +48,49 @@ class ServerSettingsViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     //End of Table View Functions
+    //Start of Button Functions
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if(indexPath.section == 1 && indexPath.row == 0){
+            print("Test Server Settings")
+        }else if(indexPath.section == 1 && indexPath.row == 1){
+            print("Save Settings")
+        }
+    }
+    //End of Button Functions
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

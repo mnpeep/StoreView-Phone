@@ -10,7 +10,7 @@ import UIKit
 
 public class TextFieldTableCell: UITableViewCell {
     @IBOutlet weak var textField: UITextField!
-    public func editPlaceholder (#placeholder: String?){
+    public func editPlaceholder (placeholder placeholder: String?){
         textField.placeholder = placeholder
         textField.accessibilityLabel = placeholder
     }

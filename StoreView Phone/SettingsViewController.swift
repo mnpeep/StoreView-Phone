@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITableViewDataSource {
+class SettingsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     //Main ViewController Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,6 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     ]
     let mainSettingsTable = [
         ("Server Settings"),
-        ("Login Settings"),
         ("Sync Settings")
     ]
     let viewSettingsTable = [
@@ -45,7 +44,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         }else{
             cellTitle = "Error"
         }
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         cell.textLabel?.text = cellTitle
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
@@ -70,4 +69,13 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         }
     }
     //End of Table View Functions
+    //Start of Select Functions
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if(indexPath.section == 0 && indexPath.row == 0){ //Server Settings
+            self.performSegueWithIdentifier("ServerSettingsViewControllerSegue", sender: self)
+        }else{
+            self.performSegueWithIdentifier("SyncSettingsViewControllerSegue", sender: self)
+        }
+    }
+    //End of Select Functions
 }

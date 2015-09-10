@@ -12,7 +12,7 @@ class DatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     //Main Functions Start
     override func viewDidLoad() {
         super.viewDidLoad()
-        var nib = UINib(nibName: "datesTableViewCell", bundle: nil)
+        let nib = UINib(nibName: "datesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "expcell")
         self.refreshControl = UIRefreshControl()
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
@@ -30,7 +30,7 @@ class DatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell 	{
         
-        var cell: datesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("expcell") as! datesTableViewCell
+        let cell: datesTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("expcell") as! datesTableViewCell
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell.productQuantity.text = "100"
         cell.productName.text = "Test Product"
@@ -39,7 +39,7 @@ class DatesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("Row \(indexPath.row) selected")
+        print("Row \(indexPath.row) selected")
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
